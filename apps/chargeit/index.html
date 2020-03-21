@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="icon" sizes="192x192" href="favicon.png">
+
+    <title>Charge It : Charge up your device</title>
+
+    <meta name="theme-color" content="#ff0000">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Milkysoft Developers">
+
+    <meta name="description"
+          content="Want a super fast charging? try: Charge It! This application (Charge It) help you to charge your device super fast by disabling all function and features to speed up the charging process with one single tap.">
+
+    <meta name="keywords"
+          content="Milkysoft, Developers, Android, Development, Application, Apps, Color, Charge, It, YouPlay, Pristine, Charge, It, :, Charge, up, your, device">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148962327-2"></script>
+
+    <script src="script.js"></script>
+
+    <noscript>
+        <style>
+            #content {
+                display: block;
+            }
+        </style>
+    </noscript>
+
+</head>
+
+<body id="content" class="content" onload="onContentLoaded()">
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7HD5T8"
+            height="0" width="0" style="display:none;visibility:hidden">
+
+    </iframe>
+
+    <h1 style="color: #ffffff; font-size: 2.5vw;">No JavaScript</h1>
+    <div style="background-color: red; position:fixed; top:0; left: 0; width:100%; z-index:1;">
+
+        <h1 style="background-color: red; color: #ffffff; font-size: 2.5vw;">JavaScript is disabled some
+            functions may not work properly.</h1>
+
+    </div>
+</noscript>
+
+<div id="viewScreen" class="view_screen">
+    <span class="close_view_screen" onclick="closeViewScreen()">&times;</span>
+    <img id="viewScreen1" src="images/no_image.svg" class="view_screenshot" alt="Screenshot 1">
+    <img id="viewScreen2" src="images/no_image.svg" class="view_screenshot" alt="Screenshot 2">
+    <img id="viewScreen3" src="images/no_image.svg" class="view_screenshot" alt="Screenshot 3">
+</div>
+
+<div class="app_download_modal" id="download_modal">
+    <div class="app_download_modal_content" id="download_modal_content">
+        <div class="close_btn">
+            <span class="close" onclick="closeDownload()">&times;</span>
+        </div>
+
+        <img class="app_download_icon" src="images/chargeit_icon.svg" alt="Charge It">
+        <h1 class="app_download_name">Charge It : Charge up your device</h1>
+        <p class="app_download_detail">Download Size: 1.53MB (APK File)</p>
+        <a href="https://github.com/milkysoftdevelopers/milkysoftdevelopers.github.io/releases/download/v6.0/com.milkysoft.chargeit.apk"
+           target="_blank">
+            <img class="app_download_now" src="images/download_now.svg" alt="Download Now!">
+        </a>
+        <hr>
+
+        <div class="app_badges">
+            <img onclick="openLink('https://play.google.com/store/apps/details?id=com.milkysoft.chargeit',true)"
+                 class="app_badge" src="images/play_badge.svg" alt="GET IT ON Google Play">
+            <img onclick="openLink('https://www.amazon.com/Charge-up-your-device/dp/B07R5P1XL9/ref=sr_1_2?qid=1556712049&refinements=p_4%3AMilkysoft&s=mobile-apps&sr=1-2',true)"
+                 class="app_badge" src="images/amazon_badge.svg" alt="available at amazon appstore">
+        </div>
+        <div class="app_badges">
+            <img onclick="openLink('https://galaxy.store/chargeit',true)" class="app_badge"
+                 src="images/galaxy_badge.svg" alt="Available on SAMSUNG Galaxy Store">
+            <img onclick="openLink('https://charge-it.en.aptoide.com/',true)" class="app_badge"
+                 src="images/aptoide_badge.svg" alt="GET IT ON Aptoide">
+        </div>
+        <div class="app_badges">
+            <img onclick="openLink('https://charge-it-charge-up-your-device.en.uptodown.com/android/',true)"
+                 class="app_badge" src="images/uptodown_badge.svg" alt="GET IT ON uptodown">
+            <img onclick="openLink('http://android.oms.apps.bemobi.com/en_us/charge_it_charge_up_your_device_151515.html',true)"
+                 class="app_badge" src="images/opera_badge.svg" alt="DOWNLOAD FROM Opera Mobile Store">
+        </div>
+    </div>
+</div>
+
+<div class="head">
+
+    <img onclick="openLink('../../',false)" class="milkysoft_head_logo" src="images/milkysoft_logo.svg"
+         alt="Milkysoft Logo">
+
+    <img onclick="openLink('../../',false)" class="milkysoft_head_cover" src="images/milkysoft_trans_ban_cover.svg"
+         alt="Milkysoft Cover">
+
+    <button onclick="openLink('../',false)" class="menu_button_1">Apps</button>
+
+    <button onclick="openLink('../../support',false)" class="menu_button_2">Support</button>
+
+    <button onclick="openLink('../../about',false)" class="menu_button_3">About Us</button>
+
+</div>
+
+<hr>
+
+<img class="app_icon" src="images/chargeit_icon.svg" alt="Charge It Icon">
+
+<h1 class="app_name">Charge It : Charge up your device</h1>
+
+<p class="app_version">Version : 6.0 By Milkysoft</p>
+
+<img class="download_button" onclick="download()" src="images/download.svg" alt="Download">
+
+<hr>
+
+<h1 class="milkysoft_titles">Screenshots</h1>
+
+<hr>
+
+<div class="screenshots">
+    <img onclick="viewScreen()" src="images/screenshot_1.svg" class="screenshot" alt="Charge It Screenshot 1">
+    <img onclick="viewScreen()" src="images/screenshot_2.svg" class="screenshot" alt="Charge It Screenshot 2">
+    <img onclick="viewScreen()" src="images/screenshot_3.svg" class="screenshot" alt="Charge It Screenshot 3">
+</div>
+
+<hr>
+
+<h1 class="milkysoft_titles">System Requirements</h1>
+
+<hr>
+
+<div class="system_require">
+    <div class="system_require_column">
+        <h1 class="system_require_title">Minimum</h1>
+
+        <p class="system_require_text">Android Version: 4.0.3 (I.S)</p>
+        <p class="system_require_text">RAM: 4.2MB</p>
+        <p class="system_require_text">Storage Space: 6.92MB</p>
+        <p class="system_require_text">Screen Size: 3.7In</p>
+
+    </div>
+
+    <div class="system_require_column">
+        <h1 class="system_require_title">Recommended</h1>
+
+        <p class="system_require_text">Android Version: 5.0 (Lollipop) or above</p>
+        <p class="system_require_text">RAM: 10MB or above</p>
+        <p class="system_require_text">Storage Space: 8MB or above</p>
+        <p class="system_require_text">Screen Size: 5.0In or above</p>
+
+    </div>
+
+    <div class="system_require_column">
+        <h1 class="system_require_title">Maximum</h1>
+
+        <p class="system_require_text">Android Version: 10.0 (Q)</p>
+        <p class="system_require_text">RAM: Not specific</p>
+        <p class="system_require_text">Storage Space: Not specific</p>
+        <p class="system_require_text">Screen Size: 10.1In</p>
+    </div>
+</div>
+
+<hr>
+
+<h1 class="milkysoft_titles">What's New?</h1>
+
+<hr>
+
+<div class="app_new">
+    <p class="app_new_text">
+        * Some GUI Improvements.
+        <br>* App Size Reduced.
+        <br>* Added Support For Multi-Window.
+        <br>* Added Support For Split-Screen.
+        <br>* Added Support For Foldable Screen.
+    </p>
+</div>
+
+<hr>
+
+<h1 class="milkysoft_titles">Privacy Policies</h1>
+
+<hr>
+
+<a href="privacy-policy">
+    <img class="app_lock" src="images/chargeit_lock.svg" alt="Charge It Privacy Policy">
+</a>
+
+<hr>
+
+<h1 class="milkysoft_titles">Description</h1>
+
+<hr>
+
+<div class="app_des">
+    <p class="app_des_text">Want a super fast charging? try: Charge It!
+        <br>
+        <br>
+        <br>This application (Charge It) help you to charge your device super fast by disabling all function and
+        features to speed up the charging process with one single tap.
+    </p>
+</div>
+
+<hr>
+
+<a style="font-size: 2vw; margin: 1%; float: right;" href="mailto:info.milkysoft@gmail.com">
+    Report a problem
+</a>
+
+</body>
+
+</html>

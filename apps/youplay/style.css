@@ -1,0 +1,473 @@
+a {
+    text-decoration: none;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.milkysoft_head_logo {
+    width: 7.5%;
+}
+
+.milkysoft_head_cover {
+    margin-left: 1.5%;
+    width: 30%;
+}
+
+.milkysoft_head_logo:hover {
+    cursor: pointer;
+}
+
+.milkysoft_head_cover:hover {
+    cursor: pointer;
+}
+
+.menu_button_1 {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 3% 2%;
+    font-size: 2.25vw;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.menu_button_2 {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 3% 2%;
+    font-size: 2.25vw;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.menu_button_3 {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 3% 2%;
+    font-size: 2.25vw;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.menu_button_1:hover {
+    background-color: orange;
+}
+
+.menu_button_2:hover {
+    background-color: orange;
+}
+
+.menu_button_3:hover {
+    background-color: orange;
+}
+
+.content {
+    display: none;
+    position: relative;
+    animation-name: startup;
+    animation-duration: 1s;
+    -webkit-animation-name: startup;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: startup;
+    -moz-animation-duration: 1s;
+    -o-animation-name: startup;
+    -o-animation-duration: 1s;
+    text-align: center;
+}
+
+@-webkit-keyframes startup {
+    from {
+        -webkit-transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes startup {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes startup {
+    from {
+        -o-transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        -o-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes startup {
+    from {
+        -moz-transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        -moz-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.milkysoft_titles {
+    font-size: 4vw;
+}
+
+.app_icon {
+    width: 25%;
+}
+
+.app_name {
+    font-size: 4.5vw;
+}
+
+.app_version {
+    font-size: 3vw;
+}
+
+.download_button {
+    width: 37.5%;
+}
+
+.download_button:hover {
+    cursor: pointer;
+}
+
+.close {
+    float: right;
+    font-size: 5vw;
+}
+
+.close:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.close_btn {
+    width: 100%;
+    float: right;
+}
+
+.app_download_modal {
+    position: fixed;
+    display: none;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.app_download_modal_content {
+    display: none;
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 2%;
+    border-radius: 8% / 6.5%;
+    animation-name: showDialog;
+    animation-duration: 0.25s;
+    -webkit-animation-name: showDialog;
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-name: showDialog;
+    -moz-animation-duration: 0.25s;
+    -o-animation-name: showDialog;
+    -o-animation-duration: 0.25s;
+}
+
+.app_download_modal_close {
+    animation-name: closeDialog;
+    animation-duration: 0.25s;
+    -webkit-animation-name: closeDialog;
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-name: closeDialog;
+    -moz-animation-duration: 0.25s;
+    -o-animation-name: closeDialog;
+    -o-animation-duration: 0.25s;
+}
+
+@keyframes showDialog {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes showDialog {
+    from {
+        -webkit-transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1.0);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes showDialog {
+    from {
+        -moz-transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        -moz-transform: scale(1.0);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes showDialog {
+    from {
+        -o-transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        -o-transform: scale(1.0);
+        opacity: 1;
+    }
+}
+
+@keyframes closeDialog {
+    from {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes closeDialog {
+    from {
+        -webkit-transform: scale(1.0);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes closeDialog {
+    from {
+        -moz-transform: scale(1.0);
+        opacity: 1;
+    }
+    to {
+        -moz-transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes closeDialog {
+    from {
+        -o-transform: scale(1.0);
+        opacity: 1;
+    }
+    to {
+        -o-transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+.app_download_icon {
+    width: 20%;
+}
+
+.app_download_name {
+    font-size: 3.5vw;
+}
+
+.app_download_detail {
+    font-size: 2vw;
+}
+
+.app_download_now {
+    width: 35%;
+}
+
+.app_download_now:hover {
+    width: 35%;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.app_badges {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.app_badge {
+    width: 48%;
+    margin: 2%;
+}
+
+.app_badge:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.screenshot {
+    width: 24%;
+}
+
+.screenshot:hover {
+    cursor: pointer;
+}
+
+.screenshots {
+    overflow: auto;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.system_require {
+    background-color: #323639;
+    width: 100%;
+    display: flex;
+    border-radius: 5% / 20%;
+}
+
+.system_require_column {
+    display: table;
+    margin: 0 auto;
+}
+
+.system_require_title {
+    color: white;
+    font-size: 3.5vw;
+    text-align: left;
+}
+
+.system_require_text {
+    text-align: left;
+    color: white;
+    font-size: 2vw;
+}
+
+.app_lock {
+    width: 37.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.app_lock:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.app_new {
+    display: table;
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #323639;
+    border-radius: 10% / 22%;
+}
+
+.app_new_text {
+    text-align: left;
+    font-size: 2.5vw;
+    color: white;
+}
+
+.app_des {
+    border-radius: 10% / 20%;
+    background-color: #323639;
+}
+
+.app_des_text {
+    margin: 1% auto 2% auto;
+    padding: 2%;
+    font-size: 2.5vw;
+    width: 80%;
+    color: white;
+}
+
+.close_view_screen {
+    z-index: 2;
+    position: fixed;
+    font-size: 5vw;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    top: 2%;
+    right: 2%;
+}
+
+.close_view_screen:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.view_screenshot {
+    height: 100%;
+}
+
+.view_screen {
+    position: fixed;
+    display: none;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation-name: showDialog;
+    animation-duration: 0.25s;
+    -webkit-animation-name: showDialog;
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-name: showDialog;
+    -moz-animation-duration: 0.25s;
+    -o-animation-name: showDialog;
+    -o-animation-duration: 0.25s;
+}

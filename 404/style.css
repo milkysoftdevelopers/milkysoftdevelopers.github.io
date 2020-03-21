@@ -1,0 +1,105 @@
+a {
+    text-decoration: none;
+}
+
+.content {
+    display: none;
+    position: relative;
+    animation-name: startup;
+    animation-duration: 1s;
+    -webkit-animation-name: startup;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: startup;
+    -moz-animation-duration: 1s;
+    -o-animation-name: startup;
+    -o-animation-duration: 1s;
+    text-align: center;
+}
+
+@-webkit-keyframes startup {
+    from {
+        -webkit-transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes startup {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes startup {
+    from {
+        -o-transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        -o-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes startup {
+    from {
+        -moz-transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        -moz-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.not_found_image {
+    width: 50%;
+}
+
+.not_found_text {
+    font-size: 4vw;
+}
+
+.buttons {
+    width: 50%;
+    margin: 1% auto 2% auto;
+}
+
+.menu_button_1 {
+    border: none;
+    background-color: blue;
+    color: white;
+    outline: none;
+    padding: 3% 2%;
+    font-size: 3vw;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.menu_button_2 {
+    border: none;
+    background-color: blue;
+    color: white;
+    outline: none;
+    padding: 3% 2%;
+    float: right;
+    font-size: 3vw;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.menu_button_1:hover {
+    background-color: orange;
+}
+
+.menu_button_2:hover {
+    background-color: orange;
+}

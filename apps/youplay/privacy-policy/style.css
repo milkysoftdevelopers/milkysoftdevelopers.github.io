@@ -1,0 +1,148 @@
+a {
+    text-decoration: none;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.milkysoft_head_logo {
+    width: 7.5%;
+}
+
+.milkysoft_head_cover {
+    margin-left: 1.5%;
+    width: 30%;
+}
+
+.milkysoft_head_logo:hover {
+    cursor: pointer;
+}
+
+.milkysoft_head_cover:hover {
+    cursor: pointer;
+}
+
+.menu_button_1 {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 3% 2%;
+    font-size: 2.25vw;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.menu_button_2 {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 3% 2%;
+    font-size: 2.25vw;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.menu_button_3 {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 3% 2%;
+    font-size: 2.25vw;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.menu_button_1:hover {
+    background-color: orange;
+}
+
+.menu_button_2:hover {
+    background-color: orange;
+}
+
+.menu_button_3:hover {
+    background-color: orange;
+}
+
+.content {
+    display: none;
+    position: relative;
+    animation-name: startup;
+    animation-duration: 1s;
+    -webkit-animation-name: startup;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: startup;
+    -moz-animation-duration: 1s;
+    -o-animation-name: startup;
+    -o-animation-duration: 1s;
+    text-align: center;
+}
+
+@-webkit-keyframes startup {
+    from {
+        -webkit-transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes startup {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes startup {
+    from {
+        -o-transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        -o-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes startup {
+    from {
+        -moz-transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        -moz-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.milkysoft_titles {
+    font-size: 4vw;
+}
+
+.app_icon {
+    width: 25%;
+}
+
+.app_policies {
+    width: 87.5%;
+    font-size: 3vw;
+    margin: 1% auto 2% auto;
+}
+
+.app_permission {
+    width: 87.5%;
+    margin: 1% auto 2% auto;
+    text-align: left;
+    font-size: 3vw;
+}
