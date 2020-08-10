@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <title>Hello</title>
     <script>
-        window.onfocus = function () {
-
-    };
-
-    window.onblur = function () {
+    document.onvisibilitychange = function () {
         document.getElementById("key").textContent = "Your key is Expired! Please refresh the page to generate a new one!"
     };
     </script>
