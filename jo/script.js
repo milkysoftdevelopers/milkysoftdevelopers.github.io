@@ -1,3 +1,6 @@
 document.onvisibilitychange = function () {
-    document.getElementsByClassName("player-control-play-pause-icon").item(0).click();
+    if (document.visibilityState === "hidden") {
+        document.hidden = false;
+        document.visibilityState = "visible";
+    }
 };
