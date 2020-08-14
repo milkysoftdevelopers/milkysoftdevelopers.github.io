@@ -12,6 +12,7 @@ function pauseDet(){
     }else{
         jo = "changed false";
     }
+    alert(jo);
     //setTimeout(setPause,1000);
 }
 
