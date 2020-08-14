@@ -1,11 +1,13 @@
 let isWasPaused = false;
 
-function checkPause(){
-    setTimeout(function (){
+function checkPause() {
+    setTimeout(function () {
         checkPause();
     }, 5000);
     if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video") {
-    isWasPaused = true;
+        isWasPaused = true;
+    } else {
+        isWasPaused = false;
     }
 }
 
