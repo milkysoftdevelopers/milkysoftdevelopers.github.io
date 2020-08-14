@@ -1,14 +1,16 @@
 let isWasPaused = false;
 
 function checkPause() {
-    setTimeout(function () {
-        checkPause();
-    }, 5000);
+    setTimeout(checkAgain, 5000);
     if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video") {
         isWasPaused = true;
     } else {
         isWasPaused = false;
     }
+}
+
+function checkAgain(){
+    checkPause();
 }
 
 document.onvisibilitychange = function () {
