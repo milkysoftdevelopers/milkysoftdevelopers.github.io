@@ -2,8 +2,10 @@ let isWasPaused = false;
 
 alert("Script loaded!!");
 
-document.getElementsByClassName("player-control-play-pause-icon").item(0).onclick = function() {
-setTimeout(setPause,1000);
+document.getElementsByClassName("player-control-play-pause-icon").item(0).addEventListener("click", pauseDet);
+
+function pauseDet(){
+    setTimeout(setPause,1000);
 }
 
 function setPause() {
