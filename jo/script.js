@@ -13,7 +13,7 @@ document.getElementsByClassName("player-control-play-pause-icon").item(0).onclic
 },1000)
 */
 document.onvisibilitychange = function () {
-isWasPaused = false
+isWasPaused = false;
      if (isWasPaused){
         var jo = "true";
     }else{
