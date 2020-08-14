@@ -2,7 +2,7 @@ let isWasPaused = false;
 
 alert("Script loaded!!");
 
-document.getElementsByClassName("player-control-play-pause-icon").item(0).addEventListener("click", pauseDet);
+document.getElementsByClassName("player-control-play-pause-icon").item(0).addEventListener("focus", pauseDet);
 
 function pauseDet(){
     setTimeout(setPause,1000);
@@ -10,10 +10,11 @@ function pauseDet(){
 
 function setPause() {
     isWasPaused = document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video";
+    let jo = "changed true";
     if (isWasPaused){
-        var jo = "changed true";
+        jo = "changed true";
     }else{
-        var jo = "changed false";
+        jo = "changed false";
     }
     alert(jo);
 }
@@ -21,7 +22,7 @@ function setPause() {
 document.onvisibilitychange = function () {
     if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video") {
         if (isWasPaused === false){
-        document.getElementsByClassName("player-control-play-pause-icon").item(0).click();
+            document.getElementsByClassName("player-control-play-pause-icon").item(0).click();
         }
     }
 };
