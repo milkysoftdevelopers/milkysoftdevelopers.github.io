@@ -12,7 +12,7 @@ function checkPause() {
 }
 
 document.onvisibilitychange = function () {
-    if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video" && !isWasPaused) {
+    if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video" && isWasPaused === false) {
         document.getElementsByClassName("player-control-play-pause-icon").item(0).click();
     }
 };
