@@ -1,6 +1,11 @@
 document.onvisibilitychange = function () {
-    if (document.visibilityState === "hidden") {
-        document.hidden = false;
-        document.visibilityState = "visible";
+    if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video") {
+        document.getElementsByClassName("player-control-play-pause-icon").item(0).click();
     }
 };
+
+function pauseForCall() {
+    if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Pause video") {
+        document.getElementsByClassName("player-control-play-pause-icon").item(0).click();
+    }
+}
