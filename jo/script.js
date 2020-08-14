@@ -5,7 +5,14 @@ alert("Script loaded!!");
 document.getElementsByClassName("player-control-play-pause-icon").item(0).onclick = pauseDet();
 
 function pauseDet(){
-    setTimeout(setPause,1000);
+    isWasPaused = document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video";
+    let jo = "changed true";
+    if (isWasPaused){
+        jo = "changed true";
+    }else{
+        jo = "changed false";
+    }
+    //setTimeout(setPause,1000);
 }
 
 function setPause() {
