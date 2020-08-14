@@ -1,17 +1,13 @@
 let isWasPaused = false;
 
-function checkPause() {
-    setTimeout(checkAgain, 5000);
+
+document.getElementsByClassName("player-control-play-pause-icon").item(0).onclick = function () {
     if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video") {
         isWasPaused = true;
     } else {
         isWasPaused = false;
     }
-}
-
-function checkAgain(){
-    checkPause();
-}
+};
 
 document.onvisibilitychange = function () {
     if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video" && isWasPaused === false) {
@@ -23,4 +19,4 @@ function pauseForCall() {
     if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Pause video") {
         document.getElementsByClassName("player-control-play-pause-icon").item(0).click();
     }
-}
+};
