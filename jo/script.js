@@ -1,5 +1,16 @@
-document.onvisibilitychange = function () {
+let isWasPaused = false;
+
+function checkPause(){
+    setTimeout(function (){
+        checkPause();
+    }, 5000);
     if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video") {
+    isWasPaused = true;
+    }
+}
+
+document.onvisibilitychange = function () {
+    if (document.getElementsByClassName("player-control-play-pause-icon").item(0).getAttribute("aria-label").toString() === "Play video" && !isWasPaused) {
         document.getElementsByClassName("player-control-play-pause-icon").item(0).click();
     }
 };
